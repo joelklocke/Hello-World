@@ -8,11 +8,11 @@ This project is for coding your taxes in Iowa for 2023. When running this code y
 
 ### Program Code
 
-fh = open('fightsong.txt')
+'fh = open('fightsong.txt')
 count = 0
 for line in fh:
     count += 1
     print (line)
 print("There are", count, "lines.")
-
+'
 ##### Files Used
