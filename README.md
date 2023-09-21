@@ -9,7 +9,7 @@ This project is for printing out the Iowa Fight Song and counting how many lines
 
 ### Program Code
 In order to run this code you have to do a couple steps:
-1. Save Iowa Fight Song to file
+1. Save Iowa Fight Song to computer as fightsong.txt
 2. Upload the file to python
 3. Type the code
 4. Run the code
