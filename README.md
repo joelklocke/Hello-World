@@ -7,7 +7,12 @@
 This project is for printing out the Iowa Fight Song and counting how many lines are in the song. This is a great starting project for doing python code. This was one of my introduction projects to using python.
 
 ### Program Code
-
+In order to run this code you have to do a couple steps:
+1. Save Iowa Fight Song to file
+2. Upload the file to python
+3. Type the code
+4. Run the code
+   
 '''
 fh = open('fightsong.txt')
 count = 0
