@@ -4,6 +4,6 @@
 
 ### Description
 
-#### How to Run Program
+### How to Run Program
 
 ##### Files Used
