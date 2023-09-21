@@ -18,4 +18,4 @@ print("There are", count, "lines.")
 '''
 
 ### Files Used
-- [Iowa Fight Song] (fightsong.txt')
+- [Iowa Fight Song] (https://oniowa.uiowa.edu/content/school-songs)
