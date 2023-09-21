@@ -4,7 +4,7 @@
 
 
 ### Description
-This project is for coding your taxes in Iowa for 2023. When running this code you can input your income, if you are filing jointly and then your partner's income if so. It will then output your state tax, federal tax, and total tax for the year. It is a very useful program for someone who knows their salary for the year. 
+This project is for printing out the Iowa Fight Song and counting how many lines are in the song. This is a great starting project for doing python code. This was one of my introduction projects to using python.
 
 ### Program Code
 
@@ -19,4 +19,5 @@ print("There are", count, "lines.")
 
 ### Files Used
 - Iowa Fight Song
-- (https://oniowa.uiowa.edu/content/school-songs)
+- https://oniowa.uiowa.edu/content/school-songs
+- Save the lyrics to file and upload file to python
