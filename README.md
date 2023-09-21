@@ -9,25 +9,19 @@ This project is for coding your taxes in Iowa for 2023. When running this code y
 ### Program Code
 '
 income = float(input("What is your annual income?"))
-
 mfj = bool(input("If you are married and filling jointly type True, if not press ENTER:"))
-
 if mfj == True:
     spouse_income = float(input("Please enter the income of your spouse:"))
     income = income + spouse_income
-
 else:
     spouse_income = 0
-    income = income + spouse_income
-  
+    income = income + spouse_income 
 max_tax_1_mfj = 528.00
 max_tax_2_mfj = 2841.60
 max_tax_3_mfj = 7971.60
-
 max_tax_1_single = 264.00
 max_tax_2_single = 1420.80
 max_tax_3_single = 3985.80
-
 if mfj == True:
     
     if income <= 12000:
@@ -58,7 +52,6 @@ else:
         
 single_file_deduct = 13850
 married_file_deduct = 27700
-
 if mfj == True:
     
     income = income - married_file_deduct
@@ -86,7 +79,6 @@ if mfj == True:
     
     elif (income > 693750):
         federal_tax = 186601.50 + ((income - 693750) * .37)
-   
 else: 
     
     income = income - single_file_deduct
@@ -114,17 +106,14 @@ else:
     
     elif (income > 578125):
         federal_tax = 174238.25 + ((income - 578125) * .37)
-
 if mfj == True:
     
     print("Your tax owed for Iowa in 2023 was $",round(state_tax))
     print("Your federal tax owed for 2023 was $",round(federal_tax))
     print("Your total tax owed for 2023 was $", round(state_tax + federal_tax))
-
 else:
     print("Your tax owed for Iowa in 2023 was $",round(state_tax))
     print("Your federal tax owed for 2023 was $",round(federal_tax))
     print("Your total tax owed for 2023 was $", round(state_tax + federal_tax))
-'
 
 ##### Files Used
