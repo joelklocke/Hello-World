@@ -14,14 +14,14 @@ In order to run this code you have to do a couple steps:
 3. Type the code
 4. Run the code
    
-'''
-fh = open('fightsong.txt')
-count = 0
-for line in fh:
-    count += 1
-    print (line)
-print("There are", count, "lines.")
-'''
+
+> fh = open('fightsong.txt')
+> count = 0
+> for line in fh:
+    > count += 1
+    > print (line)
+> print("There are", count, "lines.")
+
 
 ### Files Used
 - **Iowa Fight Song**
