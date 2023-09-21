@@ -7,40 +7,26 @@
 This project is for coding your taxes in Iowa for 2023. When running this code you can input your income, if you are filing jointly and then your partner's income if so. It will then output your state tax, federal tax, and total tax for the year. It is a very useful program for someone who knows their salary for the year. 
 
 ### Program Code
-#######################
-### Part 1 - inputs ###
-#######################
 
 income = float(input("What is your annual income?"))
-mfj = bool(input("If you are married and filling jointly type True, if not press ENTER:"))
 
-### mfj stands for "married filing jointly"
+mfj = bool(input("If you are married and filling jointly type True, if not press ENTER:"))
 
 if mfj == True:
     spouse_income = float(input("Please enter the income of your spouse:"))
     income = income + spouse_income
 
-
 else:
     spouse_income = 0
     income = income + spouse_income
   
-    
-### max_tax for mfj###
-
 max_tax_1_mfj = 528.00
 max_tax_2_mfj = 2841.60
 max_tax_3_mfj = 7971.60
 
-### max_tax for singles ###
-
 max_tax_1_single = 264.00
 max_tax_2_single = 1420.80
 max_tax_3_single = 3985.80
-
-###########################
-### Part 2 - State Tax ####
-###########################
 
 if mfj == True:
     
@@ -56,7 +42,7 @@ if mfj == True:
     else: #i.e., income > 150000
         state_tax = max_tax_3_mfj + (income - 150000)*0.0600
 
-else: #i.e., the tax payer is a single
+else:
 
     if income <= 6000:
         state_tax = income * .044
@@ -70,10 +56,6 @@ else: #i.e., the tax payer is a single
     else: # i.e. , income > 75000
         state_tax = max_tax_3_single + (income - 75000)*0.0600
         
-#############################
-### Part 3 - Federal Tax ####
-#############################
-
 single_file_deduct = 13850
 married_file_deduct = 27700
 
@@ -105,7 +87,7 @@ if mfj == True:
     elif (income > 693750):
         federal_tax = 186601.50 + ((income - 693750) * .37)
    
-else: # tax payer is single 
+else: 
     
     income = income - single_file_deduct
     
